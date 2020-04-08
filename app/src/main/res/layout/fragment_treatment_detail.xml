@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundNormal"
+    android:orientation="vertical"
+    tools:context="com.imed.medcare.ui.treatment.TreatmentActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundNormal"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/colorBackgroundNormal"
+            app:collapsedTitleGravity="start"
+            app:collapsedTitleTextAppearance="@style/CollapsingToolbarLayoutTitleCollapsedStyle"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarLayoutTitleExpandedStyle"
+            app:expandedTitleGravity="bottom|start"
+            app:expandedTitleMarginBottom="16dp"
+            app:expandedTitleMarginStart="16dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="true">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/transparent"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <ImageView
+                    android:id="@+id/nav_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:src="@drawable/ic_nav_secondary_left" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/doctor_image"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center_vertical" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/doctor_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/BaseRegularTextStyle"
+                            android:textSize="@dimen/text_size_body_1"
+                            android:layout_marginEnd="4dp"
+                            android:text="Nombre doctor"/>
+
+                        <TextView
+                            android:id="@+id/doctor_establishment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/BaseRegularTextStyle"
+                            android:textSize="@dimen/text_size_caption"
+                            android:textColor="@color/black__60"
+                            android:layout_marginEnd="4dp"
+                            android:text="Nombre Clínica"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:background="@color/pale_grey_three"
+                    android:layout_width = "match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <LinearLayout
+                    android:id="@+id/show_questionnaire"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginEnd="9dp"
+                            android:src="@drawable/ic_treatment_detail"
+                            android:layout_gravity="center_vertical"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="8dp"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                style="@style/BaseRegularTextStyle"
+                                android:textSize="@dimen/text_size_body_1"
+                                android:text="@string/medic_questionnere"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                style="@style/BaseRegularTextStyle"
+                                android:textSize="@dimen/text_size_caption"
+                                android:textColor="@color/black__60"
+                                android:text="@string/your_treatment_info"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primary_text_color"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/see_questionnere"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+                    <View
+                        android:background="@color/pale_grey_three"
+                        android:layout_width = "match_parent"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        style="@style/BaseRegularTextStyle"
+                        android:textSize="@dimen/text_size_body_1"
+                        android:text="@string/treatment_creation"/>
+
+                    <TextView
+                        android:id="@+id/treatment_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:text="6/11/18"/>
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/pale_grey_three"
+                    android:layout_width = "match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_height="1dp"/>
+
+                <android.support.design.button.MaterialButton
+                    android:visibility="gone"
+                    android:id="@+id/btn_unlink_treatment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_warning"
+                    android:text="Desvincularme del tratamiento"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textColor="#ff6b6b"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="100dp"
+                    app:rippleColor="@color/ripple_red"
+                    android:textSize="@dimen/text_size_body_2"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textAllCaps="false"
+                    android:letterSpacing="0.04"
+                    app:cornerRadius="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_warning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Al eliminar el tratamiento perderás todo el progreso y no podrás volver a vincularlo"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    style="@style/EmptyItemTextStyle"
+                    android:layout_marginBottom="32dp"
+                    />
+            </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,402 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@color/colorBackgroundNormal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="DialogPickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/ripple_blue</item>
+    </style>
+
+
+    <!-- Theme.AppCompat.Light.Dialog -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/green_blue</item>
+    </style>
+
+    <!-- Texts Styles -->
+    <style name="WelcomeTitleTextStyle">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/text_size_h4</item>
+        <item name="android:textColor">@color/text_title_authentication_color</item>
+    </style>
+
+    <style name="WelcomeInfoTextStyle">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/text_size_caption</item>
+        <item name="android:textColor">@color/text_welcome_info</item>
+    </style>
+
+    <style name="TitleHomeTextStyle">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/secondary_text_color</item>
+        <item name="android:textSize">@dimen/text_size_h5</item>
+    </style>
+
+    <style name="SubTitleHomeTextStyle">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textSize">@dimen/text_size_h6</item>
+    </style>
+
+
+    <style name="ProgressbarColor" parent="AppTheme">
+        <item name="colorAccent">@color/primary_text_color</item>
+    </style>
+
+
+    <style name="EmptyItemTextStyle">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/black__60</item>
+        <item name="android:textSize">@dimen/text_size_body_2</item>
+    </style>
+
+    <style name="GroupItemTextStyle" parent="EmptyItemTextStyle">
+        <item name="android:textSize">@dimen/text_size_body_1</item>
+    </style>
+
+    <style name="PillboxBaseItemTextStyle">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/secondary_text_color</item>
+        <item name="android:textSize">@dimen/text_size_h6</item>
+    </style>
+
+    <style name="PillboxItemTextStyle" parent="PillboxBaseItemTextStyle">
+        <item name="android:textSize">@dimen/text_size_caption</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+    </style>
+
+    <style name="BaseRegularTextStyle">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/secondary_text_color</item>
+        <item name="android:textSize">@dimen/text_size_h5</item>
+    </style>
+
+    <style name="InfoTextStyle" parent="BaseRegularTextStyle">
+        <item name="android:textSize">@dimen/text_size_body_1</item>
+    </style>
+
+    <style name="AppToolsBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/secondary_text_color</item>
+        <item name="colorAccent">@color/secondary_text_color</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <!-- Alert dialog style -->
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/text_alert_buttons</item>
+        <item name="android:textColorPrimary">@color/text_alert_title</item>
+        <item name="android:textColorSecondary">@color/text_alert</item>
+    </style>
+
+    <!-- Progress dialog style-->
+    <style name="MyProgressDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!--Clickeable Texts Styles -->
+    <style name="ClicleableTextStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">@dimen/text_size_body_2</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="ClicleableGreenTextStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/btn_ripple_green</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">@dimen/text_size_body_2</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+
+    <style name="ClicleableNormalTextStyle" parent="InfoTextStyle">
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+    <style name="ClicleableBoldTextStyle" parent="ClicleableNormalTextStyle">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Buttons Styles -->
+    <style name="ContainedButtonStyle" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/text_size_body_2</item>
+        <item name="android:background">@drawable/btn_auth_contained_ripple</item>
+        <item name="android:textColor">@color/button_text_contained_color</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ContainedButtonStyleBlue" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/text_size_body_2</item>
+        <item name="android:background">@drawable/btn_answer_attachment</item>
+        <item name="android:textColor">@color/button_text_contained_color</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ContainedDisableButtonStyle" parent="ContainedButtonStyle">
+        <item name="android:background">@drawable/btn_auth_contained_disable</item>
+        <item name="android:textColor">@color/button_text_contained_disable_color</item>
+    </style>
+
+    <style name="OutlinedButtonStyle" parent="ContainedButtonStyle">
+        <item name="android:background">@drawable/btn_auth_outlined_ripple</item>
+        <item name="android:textColor">@color/button_text_outlined_color</item>
+    </style>
+
+    <style name="BorderlessButtonStyle" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/text_size_body_2</item>
+        <item name="android:textColor">@color/button_borderless_text_color</item>
+        <item name="android:background">@drawable/btn_auth_borderless_ripple</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="BorderlessButtonStyleBlue" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/text_size_body_2</item>
+        <item name="android:textColor">@color/subtitle_my_profile</item>
+        <item name="android:background">@drawable/btn_borderless_ripple_blue</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="BorderlessButtonStyleRed" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/text_size_body_2</item>
+        <item name="android:textColor">@color/button_borderless_text_color</item>
+        <item name="android:background">@drawable/btn_borderless_ripple_red</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Floating Action Button Style -->
+    <style name="FloatingActionButtonStyle">
+        <item name="backgroundTint">@color/fab_color</item>
+        <item name="elevation">@dimen/fab_elevation</item>
+        <item name="fabSize">normal</item>
+        <item name="srcCompat">@drawable/ic_nav_fordward_primary</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="FloatingActionButtonDisableStyle" parent="FloatingActionButtonStyle">
+        <item name="backgroundTint">@color/fab_disable_color</item>
+    </style>
+
+    <style name="BtnPrimaryStyle" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/button_text_primary_color</item>
+        <item name="android:background">@drawable/btn_primary_ripple</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="BtnPrimaryDisableStyle" parent="BtnPrimaryStyle">
+        <item name="android:textColor">@color/button_text_primary_color</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="BtnLinkPrimaryStyle" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+        <item name="android:background">@drawable/btn_auth_borderless_ripple</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="PillboxMedicineItemNameStyle">
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="PillboxMedicineItemDosageStyle" parent="PillboxMedicineItemNameStyle">
+        <item name="android:textColor">@color/aquamarine</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="PillboxMedicineItemTreatmentStyle" parent="PillboxMedicineItemNameStyle">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+
+    <style name="InputTextStyle">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:paddingBottom">@dimen/input_text_bottom_padding</item>
+        <item name="android:textColor">@color/input_text_color</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:inputType">text</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:textColorHint">@color/input_hint_color</item>
+        <item name="android:backgroundTint">@color/input_bottom_line_color</item>
+    </style>
+
+    <style name="InputPinStyle" parent="InputTextStyle">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">1</item>
+    </style>
+
+    <style name="SuccessTextStyle">
+        <item name="android:textSize">@dimen/text_size_body_1</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:color">@color/secondary_text_color</item>
+    </style>
+
+    <!--Bottom Sheet Styles -->
+    <style name="MyBottomSheetTitleStyle">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+    </style>
+
+    <style name="MyBottomSheetItemStyle" parent="MyBottomSheetTitleStyle">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <!--Title Text CollapsingToolbarLayout -->
+    <style name="CollapsingToolbarLayoutTitleExpandedStyle">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">@dimen/text_size_h5</item>
+        <item name="android:textColor">@color/secondary_text_color</item>
+    </style>
+
+    <style name="CollapsingToolbarLayoutTitleCollapsedStyle" parent="CollapsingToolbarLayoutTitleExpandedStyle">
+        <item name="android:textSize">@dimen/text_size_h6</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <!--Toolbar theme -->
+    <style name="AppTheme.Toolbar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.Toolbar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Splash Theme -->
+    <style name="SplashTheme" parent="Theme.AppCompat">
+        <item name="android:background">@drawable/splash</item>
+    </style>
+
+
+    <!-- ###################### -->
+    <!-- Authentication Styles  -->
+    <!-- ###################### -->
+
+    <!-- Texts Styles -->
+    <style name="AuthenticationTitleTextStyle">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">@dimen/text_size_h5</item>
+        <item name="android:textColor">@color/text_title_authentication_color</item>
+    </style>
+
+    <style name="AuthenticationInfoTextStyle" parent="AuthenticationTitleTextStyle">
+        <item name="android:textSize">@dimen/text_size_body_1</item>
+        <item name="android:textColor">@color/text_info_authentication_color</item>
+    </style>
+
+    <style name="AuthenticationInputTextStyle" parent="AuthenticationInfoTextStyle"></style>
+
+    <style name="AuthErrorTextStyle">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:layout_marginStart">@dimen/input_text_error_margin_left</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/text_color_error</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="AuthTextInputLayoutStyle">
+        <item name="android:textColorHint">@color/input_hint_color</item>
+        <item name="errorEnabled">true</item>
+        <item name="errorTextAppearance">@style/AuthErrorTextStyle</item>
+    </style>
+
+    <style name="AuthenticationInfoBottomTextStyle" parent="AuthenticationInfoTextStyle">
+        <item name="android:textColor">@color/text_info_bottom_authentication_color</item>
+        <item name="android:textSize">@dimen/text_size_caption</item>
+    </style>
+
+
+    <!-- Questionnaire-->
+
+    <style name="QuestionnaireTextInputLayoutStyle">
+        <item name="android:textSize">@dimen/input_text_bottom_padding</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="errorEnabled">true</item>
+        <item name="errorTextAppearance">@style/AuthErrorTextStyle</item>
+    </style>
+
+
+    <style name="QuestionnaireInputTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeColor">@color/white</item>
+
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxBackgroundColor">#1A212529</item>
+        <item name="android:textColorHint">@color/black__60</item>
+    </style>
+
+
+
+</resources>

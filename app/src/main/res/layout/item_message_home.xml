@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cv_message_day"
+    android:visibility="visible"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    android:padding="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic_medical_advice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/ic_medical_advice" />
+
+        <TextView
+            android:id="@+id/tv_title_message"
+            style="@style/SuccessTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ic_medical_advice"
+            android:layout_alignTop="@+id/ic_medical_advice"
+            android:layout_alignBottom="@id/ic_medical_advice"
+            android:layout_marginLeft="16dp"
+            android:text="Mensaje del día" />
+
+        <TextView
+            android:id="@+id/tv_body_message"
+            android:layout_below="@+id/ic_medical_advice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:text="No cambies las dosis de los inmunosupresores sin consultar con tu médico tratante."
+            />
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_done"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Leído"
+            android:fontFamily="@font/poppins_medium"
+            android:letterSpacing="0.04"
+            android:textColor="#322e73"
+            android:layout_below="@id/tv_body_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            app:rippleColor="@color/ripple_blue"
+            app:cornerRadius="8dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

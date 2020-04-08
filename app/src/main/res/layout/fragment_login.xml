@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/root_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.044444446" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/root_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95555556" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthenticationTitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:layout_marginTop="46dp"
+        android:textColor="@color/text_color_primary"
+        app:layout_constraintStart_toStartOf="@+id/root_left"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/message_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:id="@+id/message"
+        style="@style/AuthenticationInfoTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Ingresa con tu cuenta Mimed"
+        app:layout_constraintEnd_toStartOf="@+id/message_right"
+        app:layout_constraintStart_toStartOf="@+id/root_left"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/root_right"
+        app:layout_constraintStart_toStartOf="@+id/root_left"
+        app:layout_constraintTop_toBottomOf="@+id/message">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_rut"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/rut">
+
+            <EditText
+                android:id="@+id/rut_input"
+                style="@style/InputTextStyle"
+                android:fontFamily="@font/poppins"
+                android:layout_width="match_parent"
+                android:maxLength="9"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_password"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password">
+
+            <EditText
+                android:id="@+id/password_input"
+                style="@style/InputTextStyle"
+                android:fontFamily="@font/poppins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/login_button"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Ingresar"
+        android:letterSpacing="0.04"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/button_text_contained_color"
+        android:backgroundTint="@color/green_blue"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/root_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/root_left"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/login_button_disable"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/green_blue"
+        android:fontFamily="@font/poppins_medium"
+        android:letterSpacing="0.04"
+        android:visibility="visible"
+        android:text="Ingresar"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_contained_color"
+        android:textSize="@dimen/text_size_body_2"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/root_right"
+        app:layout_constraintStart_toStartOf="@+id/root_left"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_forgot_password"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:letterSpacing="0.04"
+        android:text="@string/forget_my_password"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"
+        android:textColor="@color/button_borderless_text_color"
+        android:textSize="13.5sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearlayout"
+        app:rippleColor="@color/ripple_green"/>
+
+</android.support.constraint.ConstraintLayout>

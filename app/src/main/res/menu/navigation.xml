@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_navigation_home"
+        android:title="Inicio"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/navigation_pillbox"
+        android:icon="@drawable/ic_navigation_pillbox"
+        android:title="Pastillero"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/navigation_treatment"
+        android:icon="@drawable/ic_navigation_treatment"
+        android:title="Tratamiento"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_navigation_profile"
+        android:title="Perfil"
+        app:showAsAction="always" />
+</menu>

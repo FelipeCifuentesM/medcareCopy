@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Medcare</string>
+    <string name="register_text">Para comenzar necesitamos tu identificación</string>
+    <string name="close_session">Cerrar sesión</string>
+    <string name="enter_with_fingerprint">Ingresar con huella</string>
+    <string name="register">Regístrate</string>
+    <string name="rut">RUT</string>
+    <string name="serial_number">Número de serie</string>
+    <string name="not_valid_rut">Rut no válido</string>
+    <string name="not_valid_document">Documento no válido</string>
+    <string name="register_condition_part1">Al crear una cuenta estoy aceptando los</string>
+    <string name="register_condition_part2">términos y condiciones</string>
+    <string name="password">Contraseña</string>
+    <string name="enter">INGRESAR</string>
+    <string name="phone_number">Número telefónico</string>
+    <string name="we_need_validate_your_phone">Necesitamos validar tu número para saber que eres tú.</string>
+    <string name="validate_number">Validar número</string>
+    <string name="not_a_valid_phone_number">Número no válido</string>
+    <string name="its_not_your_number">No es tu número?</string>
+    <string name="enter_another">Ingresar otro</string>
+    <string name="create_your_password">Crea tu contraseña</string>
+    <string name="four_digits_pin">Pin de 4 dígitos</string>
+    <string name="reload_password">Reiniciar contraseña</string>
+    <string name="name">Nombre</string>
+    <string name="last_name">Apellido</string>
+    <string name="email">Correo electrónico</string>
+    <string name="you_must_add_a_name">Ingrese su nombre</string>
+    <string name="you_must_add_a_lastname">Ingrese su apellido</string>
+    <string name="not_valid_email">Email no válido</string>
+    <string name="not_valid_password">Contraseña no válida</string>
+    <string name="document_number">Número de documento</string>
+    <string name="where_is_this">¿Donde está esto ?</string>
+    <string name="repeat_password">Repetir contraseña</string>
+    <string name="to_short_password">Contraseña muy corta</string>
+    <string name="personal_data">Datos Personales</string>
+    <string name="mimed">Mimed</string>
+    <string name="medcare_text">Medcare es un producto de</string>
+    <string name="change_profile_picture">Cambiar foto perfil</string>
+    <string name="my_doctors">Mis doctores</string>
+    <string name="not_asociated_doctor">Aún no tienes médicos\n asociados</string>
+    <string name="empty_pillbox">Aún no tienes \nmedicamentos activos</string>
+    <string name="empty_treatments">Aún no tienes \ntratamientos activos</string>
+    <string name="create_treatment">Crear tratamiento</string>
+    <string name="complete">Completar</string>
+    <string name="search_medicine">Busca el medicamento que \ndeseas agregar</string>
+    <string name="medicine">Medicamento</string>
+    <string name="medicines">Medicamentos</string>
+    <string name="treatments">Tratamientos</string>
+    <string name="medic_questionnire">Cuestionario médico</string>
+    <string name="polls">Cuestionarios</string>
+    <string name="medic_in_treatment">Médica</string>
+    <string name="addiction_in_treatment">Apego</string>
+    <string name="add">Agregar</string>
+    <string name="medicine_hr">Seleccionar hora</string>
+    <string name="conditions_accept">Al crear una cuenta estoy aceptando\nlos términos y condiciones</string>
+    <string name="re_send_code">Volver a enviar código</string>
+    <string name="add_code">Ingresar código</string>
+    <string name="forget_my_password">Olvidé mi contraseña</string>
+    <string name="see_more">Ver más</string>
+    <string name="medic_questionnere">Antecedentes de transplante</string>
+    <string name="your_treatment_info">Información de tu tratamiento</string>
+    <string name="see_questionnere">Ver antecendentes</string>
+    <string name="treatment_creation">Creación tratamiento</string>
+    <string name="medic_file_info">Mediante esta información tu medico tratante tendra los datos necesarios para un mejor tratamiento</string>
+    <string name="personal">Personal</string>
+    <string name="personal_example">género, raza, peso …</string>
+    <string name="medics">Médicas</string>
+    <string name="medics_example">alergias, enfermedades …</string>
+    <string name="lifestyle">Mis hábitos</string>
+    <string name="pick_image_intent_text">pick image</string>
+    <string name="title_activity_all_documents">AllDocumentsActivity</string>
+    <string name="API_KEY">$2y$10$pk4qm40NgNfLCWaUP2.l3uEjA5jgfcrunTDLagUsfoMqoW7FrT4o6</string>
+    <string name="generic_error_message">Se produjo un error al cargar los datos</string>
+    <string name="generic_error_message_userpoll">No tienes cuestionarios para contestar</string>
+    <string name="messageLoading">Cargando...</string>
+    <string name="error_title_text">Error</string>
+    <string name="ok_text">Aceptar</string>
+
+    <string name="home_title">Inicio</string>
+
+    <!--Local-->
+    <!--<string name="API_KEY">$2y$10$lcMg0ZUpHCw9x8rw7rsP.uR5J2BJDHojiw.BxxruiXqxJ44GE1eJ6</string>-->
+
+
+</resources>

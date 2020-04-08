@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imed.medcare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Permissions needed to receive sms -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.imed.medcare.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_square"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ic_launcher_circle"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.imed.medcare.ui.answer_questionnaire.AnswerQuestionnaireActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imed.medcare.ui.responded_polls.RespondedPollsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.imed.medcare.ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.imed.medcare.ui.welcome.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.home.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.treatment.TreatmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.questionnaire_treatment.QuestionnaireActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.my_profile.MyProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.treatment_poll_menu.PollMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.all_documents.AllDocumentsActivity"
+            android:label="@string/title_activity_all_documents"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.menu_questionnaire_medic.MenuQuestionnaireMedicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.show_document.ShowDocument"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.webview.Webview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.user_poll_menu.UserPollMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.questionnaire_user.QuestionnaireUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.onboarding.OnboardingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.personal_profile.PersonalProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.history_list.HistoryListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.response_personal_questions.ResponsePersonalQuestionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.imed.medcare.ui.manage_prescription.ManagePrescriptionActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.imed.medcare.utils.Alarm" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.com.imed.medcare"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service android:name=".network.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_pill" />
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/white" />
+    </application>
+
+</manifest>

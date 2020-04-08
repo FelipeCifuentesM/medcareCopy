@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/root_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.044444446" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/root_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95555556" />
+
+
+    <TextView
+        android:id="@+id/title2"
+        style="@style/AuthenticationTitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="@string/validate_number"
+        app:layout_constraintStart_toStartOf="@+id/root_left"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/phone"
+        style="@style/AuthenticationInfoTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="27dp"
+        android:text="+569 3920 3920"
+        app:layout_constraintStart_toStartOf="@+id/root_left"
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_code"
+        style="@style/AuthTextInputLayoutStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:hint="@string/add_code"
+        app:layout_constraintEnd_toStartOf="@+id/root_right"
+        app:layout_constraintStart_toStartOf="@+id/root_left"
+        app:layout_constraintTop_toBottomOf="@+id/phone">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/code_input"
+            style="@style/InputTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890kK"
+            android:maxLength="9" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/re_send_code"
+        style="@style/BorderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/re_send_code"
+        app:layout_constraintStart_toStartOf="@+id/root_left"
+        app:layout_constraintTop_toBottomOf="@+id/til_code" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/root_right"
+        app:layout_constraintTop_toBottomOf="@id/til_code" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_button"
+        style="@style/FloatingActionButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        app:layout_constraintEnd_toStartOf="@+id/root_right"
+        app:layout_constraintTop_toBottomOf="@+id/til_code" />
+
+</android.support.constraint.ConstraintLayout>

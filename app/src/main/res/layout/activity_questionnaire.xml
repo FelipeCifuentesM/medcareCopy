@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/content_questionnarie"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#322e73"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_questionnarie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="#322e73"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginStart="12dp"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_close_white" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="8dp"
+                android:text="Guardar"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textAllCaps="false"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@android:color/transparent"
+                android:textColor="@color/button_borderless_text_color"
+                android:textSize="@dimen/text_size_body_2"
+                android:fontFamily="@font/poppins_medium"
+                android:letterSpacing="0.04"
+                app:cornerRadius="8dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                app:rippleColor="@color/ripple_green"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anterior"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textColor="#99ffffff"
+                android:layout_marginLeft="16dp"
+                android:textSize="@dimen/text_size_body_2"
+                android:fontFamily="@font/poppins_medium"
+                android:letterSpacing="0.04"
+                android:textAllCaps="false"
+                app:cornerRadius="8dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                />
+
+            <TextView
+                android:id="@+id/title_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/InfoTextStyle"
+                android:text="1 de 3"
+                android:textColor="#99ffffff"
+                android:layout_centerInParent="true"
+                />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siguiente"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textColor="#99ffffff"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:textSize="@dimen/text_size_body_2"
+                android:fontFamily="@font/poppins_medium"
+                android:letterSpacing="0.04"
+                android:textAllCaps="false"
+                app:cornerRadius="8dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/body_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_item"
+                android:layout_width="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content"
+                android:text="Ingresa tu género"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                style="@style/CollapsingToolbarLayoutTitleExpandedStyle"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:id="@+id/tv_body_item"
+                android:layout_below="@+id/title_item"
+                android:layout_width="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                style="@style/EmptyItemTextStyle"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/questionnaire_text_color"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/tv_last_measurement_item"
+                android:layout_below="@+id/tv_body_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EmptyItemTextStyle"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_last_measurement_item"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp" />
+            <TextView
+                android:id="@+id/tv_last_answer"
+                android:layout_below="@+id/rv_option"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="16dp"
+                style="@style/EmptyItemTextStyle"
+                android:textColor="@color/questionnaire_text_color"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_last_date"
+                android:layout_below="@+id/tv_last_answer"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/questionnaire_text_color"
+                style="@style/EmptyItemTextStyle"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_progressbar_questionnaire"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:theme="@style/ProgressbarColor"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

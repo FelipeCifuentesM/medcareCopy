@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_x_large">21sp</dimen>
+    <dimen name="text_size_xx_large">24sp</dimen>
+    <dimen name="text_size_xxx_large">32sp</dimen>
+    <dimen name="text_size_gigant">36dp</dimen>
+
+    <!-- DISTANCES-->
+    <dimen name="distance_smallest">4dp</dimen>
+    <dimen name="distance_small">8dp</dimen>
+    <dimen name="distance_normal">16dp</dimen>
+    <dimen name="distance_medium">24dp</dimen>
+    <dimen name="distance_large">32dp</dimen>
+    <dimen name="distance_xxlarge">64dp</dimen>
+
+    <dimen name="input_text_bottom_padding">12dp</dimen>
+    <dimen name="input_text_error_margin_left">5dp</dimen>
+
+    <dimen name="fab_elevation">6dp</dimen>
+
+
+    <!-- ###################### -->
+    <!-- i-med Dimens  -->
+    <!-- ###################### -->
+
+    <dimen name="text_size_h1">92.4sp</dimen>
+    <dimen name="text_size_h2">57.7sp</dimen>
+    <dimen name="text_size_h3">46.2sp</dimen>
+    <dimen name="text_size_h4">32.7sp</dimen>
+    <dimen name="text_size_h5">23.1sp</dimen>
+    <dimen name="text_size_h6">19.2sp</dimen>
+    <dimen name="text_size_body_1">15.4sp</dimen>
+    <dimen name="text_size_body_2">13.5sp</dimen>
+    <dimen name="text_size_caption">11.5sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/modalBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyBottomSheetTitleStyle"
+        android:textSize="19.2sp"
+        android:padding="16dp"
+        android:text="Omitir medicamento" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1F212529"/>
+
+    <TextView
+        android:id="@+id/skip_item_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyBottomSheetItemStyle"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:visibility="gone"
+        android:text="No tengo el medicamento cerca" />
+
+    <TextView
+        android:id="@+id/skip_item_2"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        style="@style/MyBottomSheetItemStyle"
+        android:padding="16dp"
+        android:text="Me olvidé / Ocupado / Dormido" />
+
+    <TextView
+        android:id="@+id/skip_item_3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/MyBottomSheetItemStyle"
+        android:textColor="@color/black"
+    android:padding="16dp"
+    android:text="Se me acabó el medicamento" />
+
+    <TextView
+        android:id="@+id/skip_item_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyBottomSheetItemStyle"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:text="No necesito tomar esta dosis" />
+
+    <TextView
+        android:id="@+id/skip_item_5"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        style="@style/MyBottomSheetItemStyle"
+        android:padding="16dp"
+        android:text="Efectos secundarios / Otros problemas" />
+
+</LinearLayout>

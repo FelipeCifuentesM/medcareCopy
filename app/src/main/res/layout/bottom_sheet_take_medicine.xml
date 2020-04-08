@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/modalBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyBottomSheetTitleStyle"
+        android:padding="16dp"
+        android:text="¿Cuando tomó sus medicinas?" />
+
+    <TextView
+        android:id="@+id/on_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyBottomSheetItemStyle"
+        android:padding="16dp"
+        android:text="on time" />
+
+    <TextView
+        android:id="@+id/now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyBottomSheetItemStyle"
+        android:padding="16dp"
+        android:text="now" />
+
+    <TextView
+        android:id="@+id/set_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyBottomSheetItemStyle"
+        android:padding="16dp"
+        android:text="Elegir otra hora" />
+
+</LinearLayout>

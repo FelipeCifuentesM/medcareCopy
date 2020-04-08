@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base Colors -->
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#a2a2a2</color>
+    <color name="colorAccent">#9b9b9b</color>
+
+    <color name="colorBackgroundNormal">@color/colorPrimary</color>
+    <color name="colorBackgroundDarkGreyBlue">#3a506b</color>
+    <color name="colorBackgroundMedicineCreation">#eef0f4</color>
+    <color name="delay_card_item">#ff6b6b</color>
+
+    <!-- Extra Colors -->
+    <color name="black">#000000</color>
+    <color name="blue_grey">#a6b5c7</color>
+    <color name="not_asociated_doctor">#a6b5c7</color>
+    <color name="pale_grey">#fbfbfd</color>
+    <color name="pale_grey_two">#eef0f4</color>
+
+    <!-- TEXT COLORS -->
+    <color name="text_color_primary">#3a506b</color>
+    <color name="text_color_backgroundtint">#1e000000</color>
+    <color name="text_color_close_sesion">#4184f3</color>
+    <color name="dodger_blue">#4184f3</color>
+    <color name="aquamarine">#00d2c7</color>
+    <color name="close_session">#ff6b6b</color>
+
+    <!-- ALERT COLORS -->
+    <color name="text_alert">#302f2f</color>
+    <color name="text_alert_title">#000000</color>
+    <color name="text_alert_buttons">#4184f3</color>
+
+    <!-- TEXT COLORS ERROR -->
+    <color name="text_color_error">#ff6b6b</color>
+
+    <!-- INPUTS COLORS -->
+    <color name="input_text_color">#1c2541</color>
+    <color name="input_hint_color">#60000000</color>
+    <color name="input_bottom_line_color">#60000000</color>
+    <color name="input_bottom_line_error_color">#ff6b6b</color>
+    <color name="plus56">#4a4a4a</color>
+
+    <!-- BUTTONS COLOR -->
+    <color name="button_primary_color">#00d2c7</color>
+    <color name="button_primary_ripple_color">#2600d2c7</color>
+    <color name="button_disable_color">#a6b5c7</color>
+    <color name="button_text_primary_color">@color/white</color>
+    <color name="button_text_primary_disable_color">#61000000</color>
+
+    <!--- Splash Color -->
+    <color name="splash_background">#23C184</color>
+
+
+    <!-- ###################### -->
+    <!-- new colors i-med -->
+    <!-- ###################### -->
+
+    <!-- Base Colors -->
+    <color name="green_blue">#23C184</color>
+    <color name="green_light">#e3f7eb</color>
+    <color name="white">#ffffff</color>
+    <color name="greyish_brown">#4a4a4a</color>
+    <color name="cool_grey">#8c97a1</color>
+    <color name="black__87">#dc000000</color>
+    <color name="black__60">#99000000</color>
+    <color name="black__38">#61000000</color>
+    <color name="marine_blue">#092F73</color>
+    <color name="yellow_orange">#ffb400</color>
+    <color name="pale_grey_three">#e9ecef</color>
+
+    <!-- Text -->
+    <color name="primary_text_color">#23C184</color>
+    <color name="secondary_text_color">#092F73</color>
+    <color name="questionnaire_text_color">#99ffffff</color>
+
+    <color name="primary_text_color_ripple">#4223C184</color>
+
+    <color name="text_welcome_title_marine_blue">#092F73</color>
+    <color name="text_welcome_title_green_blue">@color/green_blue</color>
+    <color name="text_welcome_info">@color/greyish_brown</color>
+    
+    <color name="text_title_authentication_color">@color/black__87</color>
+    <color name="text_info_authentication_color">#99000000</color>
+    <color name="text_info_bottom_authentication_color">@color/greyish_brown</color>
+    <color name="text_done_attachment_history">#1de9b6</color>
+    <color name="text_not_done_attachment_history">#ff6b6b</color>
+
+    <!-- Buttons -->
+    <color name="button_contained_color">@color/green_blue</color>
+    <color name="button_contained_disable_color">#26000000</color>
+    <color name="button_borderless_text_color">@color/green_blue</color>
+    <color name="button_contained_ripple_color">#51ffffff</color>
+    <color name="button_borderless_ripple_color">#26009946</color>
+    <color name="button_outlined_ripple_color">#26009946</color>
+    <color name="button_text_contained_color">@color/white</color>
+    <color name="button_text_contained_disable_color">#61000000</color>
+    <color name="button_text_outlined_color">@color/green_blue</color>
+    <color name="button_outlined_stroke">#1e000000</color>
+    <color name="button_bg_invitation_waiting">#e9ecef</color>
+    <color name="fab_color">@color/green_blue</color>
+    <color name="fab_disable_color">#a6b5c7</color>
+    <color name="subtitle_my_profile">#322e73</color>
+    <color name="text_color_blue">#80322e73</color>
+    <color name="ripple_red">#80ff6b6b</color>
+    <color name="ripple_blue">#332852B3</color>
+    <color name="ripple_green">#26009946</color>
+    <color name="button_opacity11_green">#1123C184</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#ffffff</color>
+
+
+</resources>

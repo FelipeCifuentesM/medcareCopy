@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#322e73"
+    android:fitsSystemWindows="true"
+    android:id="@+id/content_manage_prescription"
+    tools:context=".ui.manage_prescription.ManagePrescriptionActivity">
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_close_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Tomar medicamentos"
+        android:textColor="@color/white"
+        android:textSize="23.1sp"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_close" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_medicine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_take_medicine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_take_medicine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:text="Tomar todos"
+        app:layout_constraintBottom_toTopOf="@+id/btn_skip_medicine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/green_blue"
+        android:textSize="@dimen/text_size_body_2"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"
+        android:letterSpacing="0.04"
+        app:cornerRadius="8dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_skip_medicine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/green_blue"
+        android:layout_marginBottom="8dp"
+        android:text="Omitir todos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/text_size_body_2"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"
+        android:letterSpacing="0.04"
+        app:cornerRadius="8dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        app:rippleColor="@color/ripple_green"/>
+
+</android.support.constraint.ConstraintLayout>

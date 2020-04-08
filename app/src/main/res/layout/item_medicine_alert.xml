@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Base.Theme.MaterialComponents"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/content_medicine"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/card_out_line">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/medicine_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v4.widget.Space
+                android:id="@+id/marginSpacer"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/medicine_image"
+                app:layout_constraintLeft_toLeftOf="@id/medicine_image"
+                app:layout_constraintRight_toRightOf="@id/medicine_image" />
+
+            <ImageView
+                android:id="@+id/ic_status_medicine"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_error_black"
+                app:layout_constraintStart_toEndOf="@+id/marginSpacer"
+                app:layout_constraintTop_toBottomOf="@+id/marginSpacer"
+                />
+
+            <LinearLayout
+                android:id="@+id/medicine_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/medicine_image"
+                app:layout_constraintRight_toLeftOf="@+id/medicine_time"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/SuccessTextStyle"
+                    android:textColor="#322e73"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Med name"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    />
+
+                <TextView
+                    android:id="@+id/treatment"
+                    style="@style/PillboxItemTextStyle"
+                    android:textColor="@color/black__60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tratamiento"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/dosage"
+                    style="@style/SuccessTextStyle"
+                    android:textColor="#322e73"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="Dosis" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/medicine_time"
+                style="@style/SuccessTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:text="16:00"
+                android:textColor="#322e73"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!-- Here start delay and take option-->
+
+        <FrameLayout
+            android:id="@+id/delay_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/my_rounded_shape_red">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Atraso de medicamento"
+                        style="@style/PillboxItemTextStyle"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"/>
+
+                    <TextView
+                        android:id="@+id/delay_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:text="1:42 hrs"
+                        style="@style/PillboxItemTextStyle"
+                        android:textColor="@color/white"/>
+
+                </RelativeLayout>
+
+        </FrameLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/skip_medicine"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/secondary_text_color"
+                android:text="     Omitir     "
+                app:layout_constraintEnd_toStartOf="@+id/take_medicine"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:rippleColor="@color/ripple_blue"
+                android:textSize="@dimen/text_size_body_2"
+                android:fontFamily="@font/poppins_medium"
+                android:textAllCaps="false"
+                android:letterSpacing="0.04"
+                app:cornerRadius="8dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"/>
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/take_medicine"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     Tomar     "
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:backgroundTint="@color/green_blue"
+                android:textSize="@dimen/text_size_body_2"
+                android:fontFamily="@font/poppins_medium"
+                android:textAllCaps="false"
+                android:letterSpacing="0.04"
+                app:cornerRadius="8dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

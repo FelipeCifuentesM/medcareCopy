@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            style="@style/SuccessTextStyle"
+            android:textColor="@color/secondary_text_color"
+            android:layout_height="wrap_content"
+            android:text="Creatina"
+            />
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_measurement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23.1sp"
+                android:text="1.3 ml/dL"
+                style="@style/CollapsingToolbarLayoutTitleExpandedStyle"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 de Junio"
+                android:textColor="@color/black__60"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                style="@style/EmptyItemTextStyle"
+                />
+        </LinearLayout>
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart1"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_above="@+id/seekBar1" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

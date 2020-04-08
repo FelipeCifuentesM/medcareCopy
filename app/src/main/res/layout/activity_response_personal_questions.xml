@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/content_questionnarie"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#322e73"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/content_action_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp">
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginStart="12dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_close_white" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:text="Guardar"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textAllCaps="false"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/transparent"
+            android:textColor="@color/button_borderless_text_color"
+            android:textSize="@dimen/text_size_body_2"
+            android:fontFamily="@font/poppins_medium"
+            android:letterSpacing="0.04"
+            app:cornerRadius="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            app:rippleColor="@color/ripple_green"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anterior"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="#99ffffff"
+            android:layout_marginLeft="16dp"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/text_size_body_2"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:letterSpacing="0.04"
+            app:cornerRadius="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            />
+
+        <TextView
+            android:id="@+id/title_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/InfoTextStyle"
+            android:text="1 de 3"
+            android:textColor="#99ffffff"
+            android:layout_centerInParent="true"
+            />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siguiente"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="#99ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/text_size_body_2"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:letterSpacing="0.04"
+            app:cornerRadius="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/content_action_button"
+        android:id="@+id/body_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_item"
+            android:layout_width="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Ingresa tu género"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            style="@style/CollapsingToolbarLayoutTitleExpandedStyle"
+            android:textColor="@android:color/white"
+            />
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_item"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_progressbar_questions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#80000000"
+        android:clickable="true">
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:theme="@style/ProgressbarColor"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>
